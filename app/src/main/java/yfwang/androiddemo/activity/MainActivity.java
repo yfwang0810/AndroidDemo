@@ -26,7 +26,9 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
+import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
 import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
+import yfwang.androiddemo.activity.ShareElementDemo.FirstActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
 import yfwang.androiddemo.bean.DemoInfo;
 
@@ -46,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
     public NavigationView mNavigationView;
     //demo 列表
     private static final DemoInfo[] DEMOS = {
-            new DemoInfo("Design Demo", "MaterialDesign特效展示", DrawerLayoutActivity.class)
+            new DemoInfo("Design Demo", "MaterialDesign特效展示", DrawerLayoutActivity.class),
+            new DemoInfo("ShareElement Demo", "共享元素效果展示", FirstActivity.class),
+            new DemoInfo("Draglayout Demo", "可拽动的Item效果展示", DraglayoutActivity.class),
 
     };
 

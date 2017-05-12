@@ -21,6 +21,7 @@
         <activity android:name=".activity.MaterialDesignDemo.FruitActivity" />
         <activity android:name=".activity.ShareElementDemo.FirstActivity"/>
         <activity android:name=".activity.ShareElementDemo.SecondActivity"/>
+        <activity android:name=".activity.DraglayoutDemo.DraglayoutActivity"/>
     </application>
 
 </manifest>
