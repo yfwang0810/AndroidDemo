@@ -26,6 +26,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
+import yfwang.androiddemo.activity.materialdesigndemo.DrawerLayoutActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
 import yfwang.androiddemo.bean.DemoInfo;
 
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     public NavigationView mNavigationView;
     //demo 列表
     private static final DemoInfo[] DEMOS = {
-
+            new DemoInfo("Design Demo", "MaterialDesign特效展示", DrawerLayoutActivity.class)
 
     };
 
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
 
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar!=null){
+        if (actionBar != null) {
 
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
@@ -92,12 +93,12 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         List<DemoInfo> list = new ArrayList<>();
-        Collections.addAll(list,DEMOS);
+        Collections.addAll(list, DEMOS);
         ListAdapter adapter = new ListAdapter(list);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(adapter);
 
-        mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
+        mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -106,10 +107,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
     //refresh
     private void refresh() {
-
-
 
 
     }
@@ -138,8 +138,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
-
 
 
 }

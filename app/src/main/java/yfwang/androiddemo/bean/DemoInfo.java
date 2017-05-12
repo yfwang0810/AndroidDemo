@@ -9,11 +9,11 @@ import android.app.Activity;
  * Date       : 2017/5/8 14:21
  */
 public class DemoInfo {
-    private  int title;
-    private  int desc;
+    private  String title;
+    private  String desc;
     private  Class<? extends Activity> demoClass;
 
-    public DemoInfo(int title, int desc,
+    public DemoInfo(String title, String desc,
                     Class<? extends Activity> demoClass) {
         this.title = title;
         this.desc = desc;
@@ -21,19 +21,19 @@ public class DemoInfo {
     }
 
 
-    public int getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitle(int title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public int getDesc() {
+    public String getDesc() {
         return desc;
     }
 
-    public void setDesc(int desc) {
+    public void setDesc(String desc) {
         this.desc = desc;
     }
 
