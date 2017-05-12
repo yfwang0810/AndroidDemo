@@ -50,7 +50,7 @@ public class FirstActivity extends AppCompatActivity implements DataInfoAdapter.
         DataInfoAdapter adapter = new DataInfoAdapter(this);
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < 20; i++){
-            list.add(R.drawable.apple);
+            list.add(R.drawable.shareelement);
         }
 
         adapter.setData(list);
