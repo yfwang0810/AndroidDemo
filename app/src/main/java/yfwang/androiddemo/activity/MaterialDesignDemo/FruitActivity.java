@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.materialdesigndemo;
+package yfwang.androiddemo.activity.MaterialDesignDemo;
 
 import android.content.Intent;
 import android.os.Bundle;

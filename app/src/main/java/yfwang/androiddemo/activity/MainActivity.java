@@ -26,7 +26,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
-import yfwang.androiddemo.activity.materialdesigndemo.DrawerLayoutActivity;
+import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
 import yfwang.androiddemo.bean.DemoInfo;
 

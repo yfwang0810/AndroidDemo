@@ -1,8 +1,10 @@
 package yfwang.androiddemo.bean;
 
 /**
- * Created by zhenwang.xiang on 2017/5/3.
  * Description:
+ * Copyright  : Copyright (c) 2016
+ * Author     : yafei.wang
+ * Date       : 2017/3/8 15:28
  */
 
 public class Fruit {

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
+    <string name="action_settings">setting</string>
 </resources>

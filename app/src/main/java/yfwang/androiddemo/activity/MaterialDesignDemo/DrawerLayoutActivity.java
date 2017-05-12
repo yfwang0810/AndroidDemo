@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.materialdesigndemo;
+package yfwang.androiddemo.activity.MaterialDesignDemo;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Random;
 
 import yfwang.androiddemo.R;
-import yfwang.androiddemo.adapter.FruitAdapter;
+import yfwang.androiddemo.adapter.material_adapter.FruitAdapter;
 import yfwang.androiddemo.bean.Fruit;
 
 public class DrawerLayoutActivity extends AppCompatActivity {

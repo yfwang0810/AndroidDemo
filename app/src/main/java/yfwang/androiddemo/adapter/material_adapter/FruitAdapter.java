@@ -1,4 +1,4 @@
-package yfwang.androiddemo.adapter;
+package yfwang.androiddemo.adapter.material_adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,12 +15,14 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import yfwang.androiddemo.R;
-import yfwang.androiddemo.activity.materialdesigndemo.FruitActivity;
+import yfwang.androiddemo.activity.MaterialDesignDemo.FruitActivity;
 import yfwang.androiddemo.bean.Fruit;
 
 /**
- * Created by zhenwang.xiang on 2017/5/3.
- * Description:
+ * Description: design Adapter
+ * Copyright  : Copyright (c) 2016
+ * Author     : yafei.wang
+ * Date       : 2017/3/8 15:28
  */
 
 public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> {

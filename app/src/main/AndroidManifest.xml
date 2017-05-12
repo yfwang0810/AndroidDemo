@@ -17,8 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.materialdesigndemo.DrawerLayoutActivity" />
-        <activity android:name=".activity.materialdesigndemo.FruitActivity" />
+        <activity android:name=".activity.MaterialDesignDemo.DrawerLayoutActivity" />
+        <activity android:name=".activity.MaterialDesignDemo.FruitActivity" />
+        <activity android:name=".activity.ShareElementDemo.FirstActivity"/>
+        <activity android:name=".activity.ShareElementDemo.SecondActivity"/>
     </application>
 
 </manifest>
