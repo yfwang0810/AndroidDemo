@@ -36,4 +36,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/core.jar')
+    compile files('libs/eventbus-2.4.0.jar')
 }

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AndroidDemo</string>
     <string name="action_settings">setting</string>
+    <!--蓝牙-->
+    <string name="lianjieshebei">连接设备</string>
+    <string name="qiehuanlianjieshebei">切换连接设备</string>
+    <string name="confirm">确定</string>
 </resources>

@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#393d44"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2f333b"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/lanya_tv_left"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_selector"
+            android:gravity="center"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/lanya_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/lianjieshebei"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_second"
+        android:layout_below="@id/rl_first"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_lanya_connect"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="扫描条形码,连接手机设备"
+            android:textColor="@color/black"
+            android:background="@drawable/dialogue_top_white_corner"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:background="@drawable/lanya_line"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/dialogue_bottom_white_corner"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/lanya_tv_imageCode"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/connectok"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rl_second"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_connect"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="连接"/>
+        <!-- <TextView
+           android:id="@+id/tv_msg"
+           android:layout_width="fill_parent"
+           android:layout_height="50dp"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center"
+           android:textColor="@android:color/white"
+           android:text="123"/> -->
+    </LinearLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="#494c53"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        />
+
+    <TextView
+        android:background="@drawable/tv_lanyaconnect_selector"
+        android:id="@+id/tv_lanya_change"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#d1d2d3"
+        android:visibility="gone"
+        android:text="@string/qiehuanlianjieshebei"/>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

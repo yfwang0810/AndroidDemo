@@ -16,13 +16,14 @@
             android:id="@+id/demo_des"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:scaleType="centerCrop" />
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/demo_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:gravity="center"
             android:layout_margin="5dp"
             android:textSize="16sp" />
     </LinearLayout>
