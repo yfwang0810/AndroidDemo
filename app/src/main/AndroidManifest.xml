@@ -32,7 +32,7 @@
 
         <service android:name=".service.BluetoothService" />
 
-        <activity android:name=".activity.Bezier.ShoppingCartBezierActivity"/>
+        <activity android:name=".activity.BezierDemo.ShoppingCartBezierActivity"/>
     </application>
 
 </manifest>

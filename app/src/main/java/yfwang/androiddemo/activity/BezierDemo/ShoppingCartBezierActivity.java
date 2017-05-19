@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.Bezier;
+package yfwang.androiddemo.activity.BezierDemo;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
