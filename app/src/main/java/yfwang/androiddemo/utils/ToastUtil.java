@@ -1,37 +1,154 @@
 package yfwang.androiddemo.utils;
 
 import android.content.Context;
+import android.os.Handler;
+import android.os.Message;
 import android.widget.Toast;
 
 /**
- * Description:
- * Copyright  : Copyright (c) 2015
- * Author     : yfwang
- * Date       : 2016/6/20 0020 上午 10:29
+ * Toast统一管理类
+ * 感谢秦文浩提供的Toast工具类（MMP）
+ * @author Android
  */
 public class ToastUtil {
+    // Toast
+    private static Toast toast;
 
-    public static void showShortToast(Context context, String message) {
-        if (context == null) return;
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+    /**
+     * 短时间显示Toast
+     *
+     * @param context
+     * @param message
+     */
+    public static void showShort(Context context, CharSequence message) {
+        if (null == toast) {
+            toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
+            // toast.setGravity(Gravity.CENTER, 0, 0);
+        } else {
+            toast.setText(message);
+        }
+        toast.show();
     }
 
-    public static void showShortToast(Context context, String message, int gravity) {
-        if (context == null) return;
-        Toast mToast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
-        mToast.setGravity(gravity, 0, 0);
-        mToast.show();
+    /**
+     * 短时间显示Toast
+     *
+     * @param context
+     * @param message
+     */
+    public static void showShort(Context context, int message) {
+        if (null == toast) {
+            toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
+            // toast.setGravity(Gravity.CENTER, 0, 0);
+        } else {
+            toast.setText(message);
+        }
+        toast.show();
     }
 
-    public static void showLongToast(Context context, String message) {
-        if (context == null) return;
-        Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+    /**
+     * 长时间显示Toast
+     *
+     * @param context
+     * @param message
+     */
+    public static void showLong(Context context, CharSequence message) {
+        if (null == toast) {
+            toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
+            // toast.setGravity(Gravity.CENTER, 0, 0);
+        } else {
+            toast.setText(message);
+        }
+        toast.show();
     }
 
-    public static void showLongToast(Context context, String message, int gravity) {
-        if (context == null) return;
-        Toast mToast = Toast.makeText(context, message, Toast.LENGTH_LONG);
-        mToast.setGravity(gravity, 0, 0);
-        mToast.show();
+    /**
+     * 长时间显示Toast
+     *
+     * @param context
+     * @param message
+     */
+    public static void showLong(Context context, int message) {
+        if (null == toast) {
+            toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
+            // toast.setGravity(Gravity.CENTER, 0, 0);
+        } else {
+            toast.setText(message);
+        }
+        toast.show();
+    }
+
+    /**
+     * 自定义显示Toast时间
+     *
+     * @param context
+     * @param message
+     * @param duration
+     */
+    public static void show(Context context, CharSequence message, int duration) {
+        if (null == toast) {
+            toast = Toast.makeText(context, message, duration);
+            // toast.setGravity(Gravity.CENTER, 0, 0);
+        } else {
+            toast.setText(message);
+        }
+        toast.show();
+    }
+
+    private static Context mContext;
+    private static Handler mHandler = new Handler() {
+
+        @Override
+        public void handleMessage(Message msg) {
+            toast = Toast.makeText(mContext, (String) msg.obj, Toast.LENGTH_LONG);
+            toast.show();
+            super.handleMessage(msg);
+        }
+
+    };
+
+    /**
+     * 自定义显示Toast时间
+     *
+     * @param context
+     * @param message
+     */
+    public static void showDoubleLong(Context context, CharSequence message) {
+        mContext = context;
+        if (null == toast) {
+            toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
+        } else {
+            toast.setText(message);
+        }
+        Message handlermessage = mHandler.obtainMessage();
+        handlermessage.obj = message;
+        mHandler.sendMessageDelayed(handlermessage, 3000);
+        toast.show();
+    }
+
+    /**
+     * 自定义显示Toast时间
+     *
+     * @param context
+     * @param message
+     * @param duration
+     */
+    public static void show(Context context, int message, int duration) {
+        if (null == toast) {
+            toast = Toast.makeText(context, message, duration);
+            // toast.setGravity(Gravity.CENTER, 0, 0);
+        } else {
+            toast.setText(message);
+        }
+        toast.show();
+    }
+
+    /**
+     * Hide the toast, if any.
+     */
+    public static void hideToast() {
+        if (null != toast) {
+            toast.cancel();
+        }
     }
 }
