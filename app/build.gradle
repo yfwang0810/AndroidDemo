@@ -26,6 +26,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/core.jar')
+    compile files('libs/eventbus-2.4.0.jar')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
     compile 'com.android.support:design:25.3.1'
@@ -33,9 +35,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:cardview-v7:25.3.1'
     compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile files('libs/core.jar')
-    compile files('libs/eventbus-2.4.0.jar')
 }

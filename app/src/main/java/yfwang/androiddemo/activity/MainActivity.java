@@ -13,6 +13,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
+import yfwang.androiddemo.activity.Bezier.ShoppingCartBezierActivity;
 import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
 import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
 import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("ShareElement Demo", "共享元素效果展示", FirstActivity.class),
             new DemoInfo("Draglayout Demo", "可拽动的Item效果展示", DraglayoutActivity.class),
             new DemoInfo(" Bluetooth Demo", "蓝牙4.0,扫描条码", BluetoothActivity.class),
+            new DemoInfo(" Bezier Demo", "购物车贝塞尔曲线效果展示", ShoppingCartBezierActivity.class),
 
     };
 
