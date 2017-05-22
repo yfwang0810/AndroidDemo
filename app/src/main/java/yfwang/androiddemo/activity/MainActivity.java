@@ -18,6 +18,7 @@ import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
 import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
 import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
 import yfwang.androiddemo.activity.ShareElementDemo.FirstActivity;
+import yfwang.androiddemo.activity.TimePickerDemo.TimePickerActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
 import yfwang.androiddemo.bean.DemoInfo;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("Draglayout Demo", "可拽动的Item效果展示", DraglayoutActivity.class),
             new DemoInfo(" Bluetooth Demo", "蓝牙4.0,扫描条码", BluetoothActivity.class),
             new DemoInfo(" Bezier Demo", "购物车贝塞尔曲线效果展示", ShoppingCartBezierActivity.class),
+            new DemoInfo(" Gallery Demo", "选择时间段(类似照片墙效果)", TimePickerActivity.class),
 
     };
 
