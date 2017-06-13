@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 指纹权限 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <application
         android:name=".global.MobileApplication"
@@ -29,11 +31,13 @@
         <activity android:name=".activity.DraglayoutDemo.DraglayoutActivity" />
         <activity android:name=".activity.BlueToothDemo.BluetoothStateActivity" />
         <activity android:name=".activity.BlueToothDemo.BluetoothActivity" />
-        <activity android:name=".activity.TimePickerDemo.TimePickerActivity"/>
+        <activity android:name=".activity.TimePickerDemo.TimePickerActivity" />
+        <activity android:name=".activity.Dagger2Demo.Dagger2Activity"/>
 
         <service android:name=".service.BluetoothService" />
 
-        <activity android:name=".activity.BezierDemo.ShoppingCartBezierActivity"/>
+        <activity android:name=".activity.BezierDemo.ShoppingCartBezierActivity" />
+        <activity android:name=".mvp.view.LoginActivity"/>
     </application>
 
 </manifest>
