@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import butterknife.BindView;
@@ -21,14 +23,14 @@ import yfwang.androiddemo.mvp.presenter.LoginPresenterCompl;
 public class LoginActivity extends Activity implements ILoginView, View.OnClickListener {
     @BindView(R.id.et_login_username)
     public EditText editUser;
-    @BindView(R.id.et_login_username)
+    @BindView(R.id.et_login_password)
     public EditText editPass;
     @BindView(R.id.btn_login_login)
-    public EditText btnLogin;
+    public Button btnLogin;
     @BindView(R.id.btn_login_clear)
-    public EditText btnClear;
+    public Button btnClear;
     @BindView(R.id.progress_login)
-    public EditText progressBar;
+    public ProgressBar progressBar;
     private LoginPresenterCompl loginPresenter;
 
     @Override

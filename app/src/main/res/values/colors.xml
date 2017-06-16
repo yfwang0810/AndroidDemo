@@ -6,10 +6,12 @@
     <color name="colorSecondary">#316671</color>
     <color name="white50">#b3ffffff</color>
     <color name="white">#ffffff</color>
+    <color name="white_E5E9ED">#E5E9ED</color>
     <color name="transparent">#00000000</color>
     <color name="red500">#db4437</color>
     <color name="textlight">#546e7a</color>
     <color name="textlight30">#4d6b8d9c</color>
     <color name="border">#e7e7e7</color>
     <color name="black">#000000</color>
+    <color name="black_333333">#333333</color>
 </resources>

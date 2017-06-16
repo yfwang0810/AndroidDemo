@@ -16,11 +16,13 @@ import yfwang.androiddemo.R;
 import yfwang.androiddemo.activity.BezierDemo.ShoppingCartBezierActivity;
 import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
 import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
+import yfwang.androiddemo.activity.KeyboardDemo.KeyboardActivity;
 import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
 import yfwang.androiddemo.activity.ShareElementDemo.FirstActivity;
 import yfwang.androiddemo.activity.TimePickerDemo.TimePickerActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
 import yfwang.androiddemo.bean.DemoInfo;
+import yfwang.androiddemo.mvp.view.LoginActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo(" Bluetooth Demo", "蓝牙4.0,扫描条码", BluetoothActivity.class),
             new DemoInfo(" Bezier Demo", "购物车贝塞尔曲线效果展示", ShoppingCartBezierActivity.class),
             new DemoInfo(" Gallery Demo", "选择时间段(类似照片墙效果)", TimePickerActivity.class),
+            new DemoInfo(" MVP Demo", "MVP模式", LoginActivity.class),
+            new DemoInfo("Keyboard Demo", "自定义键盘效果展示", KeyboardActivity.class),
 
     };
 

@@ -38,6 +38,7 @@
 
         <activity android:name=".activity.BezierDemo.ShoppingCartBezierActivity" />
         <activity android:name=".mvp.view.LoginActivity"/>
+        <activity android:name=".activity.KeyboardDemo.KeyboardActivity"/>
     </application>
 
 </manifest>
