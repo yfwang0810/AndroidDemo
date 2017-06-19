@@ -39,6 +39,7 @@ public class PayKeyboardActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paykeyboard);
         ButterKnife.bind(this);
+        initAnim();
         initView();
     }
 
