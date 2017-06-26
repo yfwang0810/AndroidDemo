@@ -7,35 +7,44 @@ import android.widget.GridView;
 import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.adapter.keyboard_adapter.KeyBoardAdapter;
 
 /**
- * Description: 自定义虚拟键盘
+ * Description: 自定义虚拟键盘按键
  * Copyright  : Copyright (c) 2016
  * Author     : yfwang
- * Date       : 2017/6/19 10:20
+ * Date       : 2017/6/20 9:41
  */
 public class VirtualKey extends RelativeLayout {
 
-     Context mContext;
-
+    Context mContext;
+    /**
+     * 身份证键盘
+     */
+    public static int IDNUMBER = 0X000001;
+    /**
+     * 小数键盘
+     */
+    public static int FLOATNUMBER = 0X000002;
+    /**
+     * 数字键盘
+     */
+    public static int NUMBER = 0X000003;
 
     private GridView gridView;    //用GrideView布局键盘，其实并不是真正的键盘，只是模拟键盘的功能
 
-    private ArrayList<Map<String, String>> valueList;
+    private ArrayList<String> valueList;
     private KeyBoardAdapter adapter;
 
 
     public VirtualKey(Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public VirtualKey(Context context, AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
     public VirtualKey(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -48,8 +57,7 @@ public class VirtualKey extends RelativeLayout {
 
         gridView = (GridView) view.findViewById(R.id.gv_keybord);
 
-        initValueList();
-        initAdapter();
+//        initValueList(IDNUMBER);
 
         addView(view);
     }
@@ -62,27 +70,56 @@ public class VirtualKey extends RelativeLayout {
 
     }
 
-    private void initValueList() {
-        // 初始化按钮上应该显示的数字
-        for (int i = 1; i < 13; i++) {
-            Map<String, String> map = new HashMap<>();
-            if (i < 10) {
-                map.put("name", String.valueOf(i));
-            } else if (i == 10) {
-                map.put("name", "X");
-            } else if (i == 11) {
-                map.put("name", String.valueOf(0));
-            } else if (i == 12) {
-                map.put("name", "");
+    // 初始化按钮上应该显示的数字
+    public void initValueList(int type) {
+        if (type == IDNUMBER) {
+            for (int i = 1; i < 13; i++) {
+                if (i < 10) {
+                    valueList.add(String.valueOf(i));
+                } else if (i == 10) {
+                    valueList.add("X");
+                } else if (i == 11) {
+                    valueList.add(String.valueOf(0));
+                } else if (i == 12) {
+                    valueList.add("");
+                }
             }
-            valueList.add(map);
+        } else if (type == FLOATNUMBER) {
+            for (int i = 1; i < 13; i++) {
+                if (i < 10) {
+                    valueList.add(String.valueOf(i));
+                } else if (i == 10) {
+                    valueList.add("");
+                } else if (i == 11) {
+                    valueList.add(String.valueOf(0));
+                } else if (i == 12) {
+                    valueList.add(".");
+                }
+            }
+        } else if (type == NUMBER) {
+            for (int i = 1; i < 13; i++) {
+                if (i < 10) {
+                    valueList.add(String.valueOf(i));
+                } else if (i == 10) {
+                    valueList.add("");
+                } else if (i == 11) {
+                    valueList.add(String.valueOf(0));
+                } else if (i == 12) {
+                    valueList.add("");
+                }
+            }
+
         }
+        initAdapter();
 
     }
-    public ArrayList<Map<String, String>> getValueList() {
+
+    public ArrayList<String> getValueList() {
         return valueList;
     }
+
     public GridView getGridView() {
         return gridView;
     }
+
 }

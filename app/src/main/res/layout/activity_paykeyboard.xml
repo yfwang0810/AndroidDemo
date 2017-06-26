@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:keytype="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <EditText
         android:id="@+id/et_number"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_margin="20dp"
-        />
+        android:layout_height="@dimen/common_dimen_dp40"
+        android:layout_margin="@dimen/common_dimen_dp20" />
+
+    <EditText
+        android:layout_below="@+id/et_number"
+        android:id="@+id/et_number1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp40"
+        android:layout_margin="@dimen/common_dimen_dp20" />
+
     <yfwang.androiddemo.widget.VirtualKeyboardView
         android:id="@+id/virtualKeyboardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        >
+        keytype:type="1"
+        android:visibility="gone">
 
     </yfwang.androiddemo.widget.VirtualKeyboardView>
 

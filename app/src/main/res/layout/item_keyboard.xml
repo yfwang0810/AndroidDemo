@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_key"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp40"
+        android:background="@drawable/keyboard_key_selector"
+        android:gravity="center"
+        android:textSize="@dimen/common_dimen_s2_dp24"
+        android:textColor="@color/common_color_c7_333333"
+        />
+
+
+</LinearLayout>
