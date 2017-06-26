@@ -7,16 +7,14 @@
 
     <Button
         android:id="@+id/btn_confirm"
-        android:layout_width="590px"
-        android:layout_height="80px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp50"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="80px"
-        android:layout_marginLeft="80px"
-        android:layout_marginRight="80px"
+        android:layout_margin="@dimen/common_dimen_dp40"
         android:background="#0094f6"
         android:text="@string/confirm"
         android:textColor="@android:color/white"
-        android:textSize="32px" />
+        android:textSize="@dimen/common_dimen_s6_dp16" />
 
     <LinearLayout
         android:layout_width="match_parent"

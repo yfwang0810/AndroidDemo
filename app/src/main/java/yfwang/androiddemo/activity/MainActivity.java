@@ -18,6 +18,7 @@ import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
 import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
 import yfwang.androiddemo.activity.KeyboardDemo.KeyboardActivity;
 import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
+import yfwang.androiddemo.activity.PayKeyboardDemo.PayKeyboardActivity;
 import yfwang.androiddemo.activity.ShareElementDemo.FirstActivity;
 import yfwang.androiddemo.activity.TimePickerDemo.TimePickerActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo(" Gallery Demo", "选择时间段(类似照片墙效果)", TimePickerActivity.class),
             new DemoInfo(" MVP Demo", "MVP模式", LoginActivity.class),
             new DemoInfo("Keyboard Demo", "自定义键盘效果展示(原生API)", KeyboardActivity.class),
-            new DemoInfo("Keyboard Demo", "自定义键盘效果展示(九宫格样式)", KeyboardActivity.class),
+            new DemoInfo("Keyboard Demo", "自定义键盘效果展示(九宫格样式)", PayKeyboardActivity.class),
 
     };
 

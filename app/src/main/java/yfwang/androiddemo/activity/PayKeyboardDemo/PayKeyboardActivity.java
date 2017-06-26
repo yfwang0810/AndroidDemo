@@ -19,7 +19,7 @@ import yfwang.androiddemo.widget.VirtualKeyboardView;
  * Author     : yfwang
  * Date       : 2017/6/20 9:35
  */
-public class KeyboardActivity extends Activity {
+public class PayKeyboardActivity extends Activity {
 
 
     private EditText mNumber;
