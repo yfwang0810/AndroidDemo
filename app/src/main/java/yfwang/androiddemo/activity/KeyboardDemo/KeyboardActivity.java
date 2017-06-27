@@ -27,6 +27,7 @@ public class KeyboardActivity extends Activity {
     public EditText mKeyboard;
     @BindView(R.id.keyboard_view)
     public KeyboardView mKeyboardView;
+    private KeyboardUtil keyboardUtil;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,10 +53,17 @@ public class KeyboardActivity extends Activity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        keyboardUtil = new KeyboardUtil(KeyboardActivity.this, mKeyboard, mKeyboardView);
         mKeyboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                KeyboardUtil keyboardUtil = new KeyboardUtil(KeyboardActivity.this, mKeyboard,mKeyboardView);
+                keyboardUtil.showKeyboard();
+            }
+        });
+
+        mKeyboard.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
                 keyboardUtil.showKeyboard();
             }
         });

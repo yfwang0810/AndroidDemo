@@ -3,11 +3,14 @@ package yfwang.androiddemo.utils;
 import android.app.Activity;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.media.AudioManager;
 import android.text.Editable;
 import android.view.View;
 import android.widget.EditText;
 
 import yfwang.androiddemo.R;
+
+import static android.content.Context.AUDIO_SERVICE;
 
 
 /**
@@ -44,6 +47,7 @@ public class KeyboardUtil {
 
             @Override
             public void onKey(int primaryCode, int[] keyCodes) {
+                playClick(primaryCode);
                 Editable editable = edit.getText();
                 int start = edit.getSelectionStart();
                 if (primaryCode == Keyboard.KEYCODE_DELETE) {
@@ -52,6 +56,16 @@ public class KeyboardUtil {
                             editable.delete(start - 1, start);
                         }
                     }
+                } else if (primaryCode == 57419) { // go left
+                    if (start > 0) {
+                        edit.setSelection(start - 1);
+                    }
+                } else if (primaryCode == 57421) { // go right
+                    if (start < edit.length()) {
+                        edit.setSelection(start + 1);
+                    }
+                } else {
+                    editable.insert(start, Character.toString((char) primaryCode));
                 }
 
             }
@@ -89,6 +103,8 @@ public class KeyboardUtil {
         int visibility = mkeyboardView.getVisibility();
         if (visibility == View.GONE || visibility == View.INVISIBLE) {
             mkeyboardView.setVisibility(View.VISIBLE);
+        } else {
+            mkeyboardView.setVisibility(View.GONE);
         }
     }
 
@@ -99,4 +115,22 @@ public class KeyboardUtil {
         }
     }
 
+
+    private void playClick(int keyCode){
+        AudioManager am = (AudioManager)activity.getSystemService(AUDIO_SERVICE);
+        switch(keyCode){
+            case 32:
+                am.playSoundEffect(AudioManager.FX_KEYPRESS_SPACEBAR);
+                break;
+            case Keyboard.KEYCODE_DONE:
+            case 10:
+                am.playSoundEffect(AudioManager.FX_KEYPRESS_RETURN);
+                break;
+            case Keyboard.KEYCODE_DELETE:
+                am.playSoundEffect(AudioManager.FX_KEYPRESS_DELETE);
+                break;
+            default:
+                am.playSoundEffect(AudioManager.FX_KEYPRESS_STANDARD);
+        }
+    }
 }
