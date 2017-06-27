@@ -5,4 +5,6 @@
     <string name="lianjieshebei">连接设备</string>
     <string name="qiehuanlianjieshebei">切换连接设备</string>
     <string name="confirm">确定</string>
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
 </resources>

@@ -20,6 +20,8 @@ android {
     sourceSets {
         main {
             res.srcDirs = ['src/main/res', 'src/main/res/menu', 'src/main/res/color', 'src/main/res/xml', 'src/main/res/anim']
+            jniLibs.srcDirs = ['libs']
+
         }
     }
 }
@@ -44,4 +46,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.google.dagger:dagger:2.0'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.0'
+    compile 'com.amap.api:3dmap:latest.integration'
+    compile files('libs/AMap_Search_V5.1.0_20170517.jar')
+    compile files('libs/AMap_Location_V3.4.0_20170427.jar')
 }
