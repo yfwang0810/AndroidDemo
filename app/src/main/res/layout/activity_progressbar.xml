@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+     <yfwang.androiddemo.widget.progressbar.CircleProgressbar
+         android:layout_width="@dimen/common_dimen_dp100"
+         android:layout_height="@dimen/common_dimen_dp100"
+         android:progress="60"
+         android:max="100"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true">
+
+     </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
+</RelativeLayout>

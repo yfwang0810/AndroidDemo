@@ -20,6 +20,7 @@ import yfwang.androiddemo.activity.KeyboardDemo.KeyboardActivity;
 import yfwang.androiddemo.activity.MapDemo.MapActivity;
 import yfwang.androiddemo.activity.MaterialDesignDemo.DrawerLayoutActivity;
 import yfwang.androiddemo.activity.PayKeyboardDemo.PayKeyboardActivity;
+import yfwang.androiddemo.activity.ProgressbarDemo.ProgressbarActivity;
 import yfwang.androiddemo.activity.ShareElementDemo.FirstActivity;
 import yfwang.androiddemo.activity.TimePickerDemo.TimePickerActivity;
 import yfwang.androiddemo.adapter.ListAdapter;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("Keyboard Demo", "自定义键盘效果展示(原生API)", KeyboardActivity.class),
             new DemoInfo("Keyboard Demo", "自定义键盘效果展示(GridView实现)", PayKeyboardActivity.class),
             new DemoInfo("Map Demo", "高德地图定位(需手动开启定位权限)", MapActivity.class),
+            new DemoInfo("CircleProgressbar Demo", "自定义progressbar", ProgressbarActivity.class),
 
     };
 

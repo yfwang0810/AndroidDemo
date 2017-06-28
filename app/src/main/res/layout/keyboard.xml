@@ -24,13 +24,13 @@
         android:layout_below="@+id/line"
         android:orientation="horizontal">
 
-        <yfwang.androiddemo.widget.VirtualKey
+        <yfwang.androiddemo.widget.keyboard.VirtualKey
             android:id="@+id/vk_key"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-        </yfwang.androiddemo.widget.VirtualKey>
+        </yfwang.androiddemo.widget.keyboard.VirtualKey>
 
         <View
             android:layout_width="10dp"

@@ -1,4 +1,4 @@
-package yfwang.androiddemo.widget;
+package yfwang.androiddemo.widget.keyboard;
 
 import android.content.Context;
 import android.content.res.TypedArray;

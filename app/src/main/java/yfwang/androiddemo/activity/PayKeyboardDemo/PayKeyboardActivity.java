@@ -11,7 +11,7 @@ import android.widget.EditText;
 import java.lang.reflect.Method;
 
 import yfwang.androiddemo.R;
-import yfwang.androiddemo.widget.VirtualKeyboardView;
+import yfwang.androiddemo.widget.keyboard.VirtualKeyboardView;
 
 /**
  * Description:

@@ -18,7 +18,7 @@
         android:layout_height="@dimen/common_dimen_dp40"
         android:layout_margin="@dimen/common_dimen_dp20" />
 
-    <yfwang.androiddemo.widget.VirtualKeyboardView
+    <yfwang.androiddemo.widget.keyboard.VirtualKeyboardView
         android:id="@+id/virtualKeyboardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         keytype:type="1"
         android:visibility="gone">
 
-    </yfwang.androiddemo.widget.VirtualKeyboardView>
+    </yfwang.androiddemo.widget.keyboard.VirtualKeyboardView>
 
 
 </RelativeLayout>
