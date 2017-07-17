@@ -92,6 +92,9 @@
         <activity android:name=".activity.PayKeyboardDemo.PayKeyboardActivity" />
         <activity android:name=".activity.MapDemo.MapActivity" />
         <activity android:name=".activity.ProgressbarDemo.ProgressbarActivity"/>
+        <activity android:name=".activity.PhotoViewDemo.PhotoViewActivity"/>
+        <activity android:name=".activity.PhotoViewDemo.SinglePicActivity"/>
+        <activity android:name=".activity.PhotoViewDemo.ListPicActivity"/>
     </application>
 
 </manifest>

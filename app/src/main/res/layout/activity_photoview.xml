@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_singlepic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp50"
+        android:layout_margin="@dimen/common_dimen_dp20"
+        android:gravity="center"
+        android:text="单张预览图片(大图预览)" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp1"
+        android:background="@color/common_color_c9_999999"
+        />
+
+    <TextView
+        android:id="@+id/tv_listpic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp50"
+        android:layout_margin="@dimen/common_dimen_dp20"
+        android:gravity="center"
+        android:text="集合预览图片(大图预览)" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp1"
+        android:background="@color/common_color_c9_999999"
+        />
+    <TextView
+        android:id="@+id/tv_editpic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp50"
+        android:layout_margin="@dimen/common_dimen_dp20"
+        android:gravity="center"
+        android:text="编辑图片" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp1"
+        android:background="@color/common_color_c9_999999"
+        />
+    <TextView
+        android:id="@+id/tv_uploadpic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp50"
+        android:layout_margin="@dimen/common_dimen_dp20"
+        android:gravity="center"
+        android:text="上传图片" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp1"
+        android:background="@color/common_color_c9_999999"
+        />
+</LinearLayout>

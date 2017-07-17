@@ -18,4 +18,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--popupWindow底部菜单动画-->
+    <style name="anim_menu_bottom_bar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottom_bar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottom_bar_out</item>
+    </style>
+
+
 </resources>
