@@ -29,28 +29,5 @@
         android:layout_height="@dimen/common_dimen_dp1"
         android:background="@color/common_color_c9_999999"
         />
-    <TextView
-        android:id="@+id/tv_editpic"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/common_dimen_dp50"
-        android:layout_margin="@dimen/common_dimen_dp20"
-        android:gravity="center"
-        android:text="编辑图片" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/common_dimen_dp1"
-        android:background="@color/common_color_c9_999999"
-        />
-    <TextView
-        android:id="@+id/tv_uploadpic"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/common_dimen_dp50"
-        android:layout_margin="@dimen/common_dimen_dp20"
-        android:gravity="center"
-        android:text="上传图片" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/common_dimen_dp1"
-        android:background="@color/common_color_c9_999999"
-        />
+
 </LinearLayout>

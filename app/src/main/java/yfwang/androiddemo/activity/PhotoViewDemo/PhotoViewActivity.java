@@ -33,14 +33,9 @@ public class PhotoViewActivity extends Activity implements View.OnClickListener 
 
         mSinglePic = (TextView) findViewById(R.id.tv_singlepic);
         mListPic = (TextView) findViewById(R.id.tv_listpic);
-        mEditPic = (TextView) findViewById(R.id.tv_editpic);
-        mUploadPic = (TextView) findViewById(R.id.tv_uploadpic);
 
         mSinglePic.setOnClickListener(this);
         mListPic.setOnClickListener(this);
-        mEditPic.setOnClickListener(this);
-        mUploadPic.setOnClickListener(this);
-
     }
 
     @Override
@@ -52,17 +47,8 @@ public class PhotoViewActivity extends Activity implements View.OnClickListener 
                 break;
             case R.id.tv_listpic:
                 startActivity(new Intent(PhotoViewActivity.this, ListPicActivity.class));
-
                 break;
-            case R.id.tv_editpic:
 
-                startActivity(new Intent(PhotoViewActivity.this, ListPicActivity.class));
-
-                break;
-            case R.id.tv_uploadpic:
-                startActivity(new Intent(PhotoViewActivity.this, ListPicActivity.class));
-
-                break;
         }
 
 
