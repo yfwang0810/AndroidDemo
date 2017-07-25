@@ -10,11 +10,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.activity.BezierDemo.ShoppingCartBezierActivity;
 import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
+import yfwang.androiddemo.activity.Dagger2Demo.Dagger2Activity;
 import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
 import yfwang.androiddemo.activity.KeyboardDemo.KeyboardActivity;
 import yfwang.androiddemo.activity.MapDemo.MapActivity;
@@ -30,7 +29,6 @@ import yfwang.androiddemo.mvp.view.LoginActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-    @BindView(R.id.recycler_view)
     public RecyclerView mRecyclerView;
     //demo 列表
     private static final DemoInfo[] DEMOS = {
@@ -45,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("Keyboard Demo", "自定义键盘效果展示(GridView实现)", PayKeyboardActivity.class),
             new DemoInfo("Map Demo", "高德地图定位(需手动开启定位权限)", MapActivity.class),
             new DemoInfo("CircleProgressbar Demo", "自定义progressbar", ProgressbarActivity.class),
-            new DemoInfo("PhotoView Demo","图片预览效果展示", PhotoViewActivity.class),
+            new DemoInfo("PhotoView Demo", "图片预览效果展示", PhotoViewActivity.class),
+            new DemoInfo("Dagger2 Demo", "Dagger2使用", Dagger2Activity.class),
     };
 
     @Override
@@ -53,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
         init();
 
     }
 
     private void init() {
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         List<DemoInfo> list = new ArrayList<>();
         Collections.addAll(list, DEMOS);

@@ -43,7 +43,6 @@ public class PhotoViewActivity extends Activity implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.tv_singlepic:
                 startActivity(new Intent(PhotoViewActivity.this, SinglePicActivity.class));
-
                 break;
             case R.id.tv_listpic:
                 startActivity(new Intent(PhotoViewActivity.this, ListPicActivity.class));

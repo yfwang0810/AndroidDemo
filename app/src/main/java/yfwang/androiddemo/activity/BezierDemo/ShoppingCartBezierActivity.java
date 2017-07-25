@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.utils.DensityUtils;
 
@@ -25,15 +23,10 @@ import yfwang.androiddemo.utils.DensityUtils;
  */
 
 public class ShoppingCartBezierActivity extends AppCompatActivity {
-    @BindView(R.id.bezier_layout)
     public RelativeLayout mBezierLayout;
-    @BindView(R.id.bezier_add)
     public Button mBezierAdd;
-    @BindView(R.id.bezier_shopping_cart)
     public ImageView mBezierShoppingCart;
-    @BindView(R.id.bezier_food)
     public ImageView mBezierFood;
-
 
     private Path mPath = new Path();
 
@@ -45,7 +38,10 @@ public class ShoppingCartBezierActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart_bert_bezier);
-        ButterKnife.bind(this);
+        mBezierLayout = (RelativeLayout) findViewById(R.id.bezier_layout);
+        mBezierAdd = (Button) findViewById(R.id.bezier_add);
+        mBezierShoppingCart = (ImageView) findViewById(R.id.bezier_shopping_cart);
+        mBezierFood = (ImageView) findViewById(R.id.bezier_food);
         init();
     }
 

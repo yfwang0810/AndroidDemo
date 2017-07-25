@@ -10,8 +10,6 @@ import android.widget.EditText;
 
 import java.lang.reflect.Method;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.utils.KeyboardUtil;
 
@@ -23,9 +21,7 @@ import yfwang.androiddemo.utils.KeyboardUtil;
  * Date       : 2017/6/14 14:03
  */
 public class KeyboardActivity extends Activity {
-    @BindView(R.id.et_keyboard)
     public EditText mKeyboard;
-    @BindView(R.id.keyboard_view)
     public KeyboardView mKeyboardView;
     private KeyboardUtil keyboardUtil;
 
@@ -33,7 +29,9 @@ public class KeyboardActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_keyboard);
-        ButterKnife.bind(this);
+        mKeyboard = (EditText) findViewById(R.id.et_keyboard);
+        mKeyboardView = (KeyboardView) findViewById(R.id.keyboard_view);
+
         init();
 
     }

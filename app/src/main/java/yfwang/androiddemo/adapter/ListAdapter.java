@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.bean.DemoInfo;
 
@@ -65,14 +63,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
-        @BindView(R.id.demo_des)
         TextView demoDes;
-        @BindView(R.id.demo_name)
         TextView demoName;
 
         ViewHolder(View view) {
             super(view);
-            ButterKnife.bind(this, view);
+            demoDes = (TextView) view.findViewById(R.id.demo_des);
+            demoName = (TextView) view.findViewById(R.id.demo_name);
             cardView = (CardView) view;
         }
     }

@@ -14,8 +14,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.adapter.timepicker.GalleryAdapter;
 import yfwang.androiddemo.utils.ToastUtil;
@@ -28,11 +26,8 @@ import yfwang.androiddemo.utils.ToastUtil;
  */
 public class TimePickerActivity extends Activity {
 
-    @BindView(R.id.btn_confirm)
     public Button mConfirm;
-    @BindView(R.id.tv_time)
     public TextView mTime;
-    @BindView(R.id.gallery)
     public Gallery mGallery;
     private String[] data = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
     private List<String> mData;
@@ -44,7 +39,11 @@ public class TimePickerActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timepicker);
-        ButterKnife.bind(this);
+        mConfirm = (Button) findViewById(R.id.btn_confirm);
+        mTime = (TextView) findViewById(R.id.tv_time);
+        mGallery = (Gallery) findViewById(R.id.gallery);
+
+
         init();
     }
 
@@ -65,7 +64,7 @@ public class TimePickerActivity extends Activity {
                 if (selectPosition == 0) {
                     mTime.setText(data[selectPosition]);
                 } else {
-                    mTime.setText("≥" + data[selectPosition]+"小时");
+                    mTime.setText("≥" + data[selectPosition] + "小时");
                 }
 
             }
@@ -80,7 +79,7 @@ public class TimePickerActivity extends Activity {
         mConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtil.showShort(TimePickerActivity.this,mData.get(selectPosition));
+                ToastUtil.showShort(TimePickerActivity.this, mData.get(selectPosition));
             }
         });
     }

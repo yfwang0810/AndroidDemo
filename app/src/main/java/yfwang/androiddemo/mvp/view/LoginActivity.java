@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import yfwang.androiddemo.R;
 import yfwang.androiddemo.mvp.presenter.LoginPresenterCompl;
 
@@ -21,15 +19,10 @@ import yfwang.androiddemo.mvp.presenter.LoginPresenterCompl;
  * Date       : 2017/6/6 15:35
  */
 public class LoginActivity extends Activity implements ILoginView, View.OnClickListener {
-    @BindView(R.id.et_login_username)
     public EditText editUser;
-    @BindView(R.id.et_login_password)
     public EditText editPass;
-    @BindView(R.id.btn_login_login)
     public Button btnLogin;
-    @BindView(R.id.btn_login_clear)
     public Button btnClear;
-    @BindView(R.id.progress_login)
     public ProgressBar progressBar;
     private LoginPresenterCompl loginPresenter;
 
@@ -37,7 +30,13 @@ public class LoginActivity extends Activity implements ILoginView, View.OnClickL
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
+        editUser = (EditText) findViewById(R.id.et_login_username);
+        editPass = (EditText) findViewById(R.id.et_login_password);
+        btnLogin = (Button) findViewById(R.id.btn_login_login);
+        btnClear = (Button) findViewById(R.id.btn_login_clear);
+        progressBar = (ProgressBar) findViewById(R.id.progress_login);
+
+
         //set listener
         btnLogin.setOnClickListener(this);
         btnClear.setOnClickListener(this);
