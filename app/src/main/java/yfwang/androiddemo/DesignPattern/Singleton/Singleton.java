@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.DesignPattern.Singleton;
+package yfwang.androiddemo.DesignPattern.Singleton;
 
 /**
  * Description: 懒汉模式

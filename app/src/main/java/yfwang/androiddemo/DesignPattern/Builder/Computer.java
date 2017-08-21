@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.DesignPattern.Builder;
+package yfwang.androiddemo.DesignPattern.Builder;
 
 /**
  * Description: 计算机抽象类

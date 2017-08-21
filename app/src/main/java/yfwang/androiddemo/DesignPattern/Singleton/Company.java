@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.DesignPattern.Singleton;
+package yfwang.androiddemo.DesignPattern.Singleton;
 
 import java.util.ArrayList;
 import java.util.List;

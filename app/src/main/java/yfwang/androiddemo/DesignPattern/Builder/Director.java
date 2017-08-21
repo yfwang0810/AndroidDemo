@@ -1,4 +1,4 @@
-package yfwang.androiddemo.activity.DesignPattern.Builder;
+package yfwang.androiddemo.DesignPattern.Builder;
 
 /**
  * Description: Director类，负责构造Computer类
