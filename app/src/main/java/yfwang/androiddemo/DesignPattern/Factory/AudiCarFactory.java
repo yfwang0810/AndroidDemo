@@ -7,6 +7,7 @@ package yfwang.androiddemo.DesignPattern.Factory;
  * Date       : 2017/8/21 20:06
  */
 public class AudiCarFactory extends AudiFactory {
+    @SuppressWarnings("unchecked")
     @Override
     public <T extends AudiCar> T createAudiCar(Class<T> clz) {
         AudiCar car = null;
