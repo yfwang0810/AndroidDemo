@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yfwang="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/share_element">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            yfwang:gravity="right_to_left_up"
+            android:layout_marginRight="30dp" />
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            yfwang:gravity="left_to_right_down"
+            android:layout_marginLeft="30dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/share_element">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            yfwang:gravity="right_to_left"
+            android:layout_gravity="center_vertical"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/share_element">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

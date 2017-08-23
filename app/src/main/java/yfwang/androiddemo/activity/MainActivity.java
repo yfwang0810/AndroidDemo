@@ -11,6 +11,8 @@ import java.util.Collections;
 import java.util.List;
 
 import yfwang.androiddemo.R;
+import yfwang.androiddemo.activity.ArrowDemo.ArrowActivity;
+import yfwang.androiddemo.activity.ArrowDemo.TriangleActivity;
 import yfwang.androiddemo.activity.BezierDemo.ShoppingCartBezierActivity;
 import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
 import yfwang.androiddemo.activity.Dagger2Demo.Dagger2Activity;
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("CircleProgressbar Demo", "自定义progressbar", ProgressbarActivity.class),
             new DemoInfo("PhotoView Demo", "图片预览效果展示", PhotoViewActivity.class),
             new DemoInfo("Dagger2 Demo", "Dagger2使用", Dagger2Activity.class),
+            new DemoInfo("Arrow Demo", "箭头图", ArrowActivity.class),
+            new DemoInfo("Triangle Demo", "三角箭头图", TriangleActivity.class),
     };
 
     @Override

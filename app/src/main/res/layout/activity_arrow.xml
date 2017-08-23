@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yfwang="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yfwang:gravity="left_to_right" />
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yfwang:gravity="right_to_left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yfwang:gravity="left_to_right_down"
+            />
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yfwang:gravity="left_to_right_up"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yfwang:gravity="right_to_left_down"
+            />
+
+        <yfwang.androiddemo.activity.ArrowDemo.ArrowView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yfwang:gravity="right_to_left_up"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

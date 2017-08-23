@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArrowView">
+        <attr name="gravity">
+            <enum name="left_to_right" value="-1" />
+            <enum name="right_to_left" value="0" />
+            <enum name="left_to_right_down" value="1" />
+            <enum name="left_to_right_up" value="2" />
+            <enum name="right_to_left_down" value="3" />
+            <enum name="right_to_left_up" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+
+</resources>
