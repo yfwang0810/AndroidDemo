@@ -17,19 +17,20 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="5dp">
 
         <yfwang.androiddemo.activity.ArrowDemo.ArrowView
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="100dp"
             yfwang:gravity="right_to_left_up"
-            android:layout_marginRight="30dp" />
+            android:layout_marginRight="20dp" />
 
         <yfwang.androiddemo.activity.ArrowDemo.ArrowView
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="100dp"
             yfwang:gravity="left_to_right_down"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             />
 
     </LinearLayout>
@@ -38,7 +39,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="96dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/common_dimen_dp20"
+        android:layout_marginRight="@dimen/common_dimen_dp20"
+        >
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="96dp"
@@ -53,6 +57,7 @@
             android:layout_weight="1"
             yfwang:gravity="right_to_left"
             android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
             />
 
         <de.hdodenhof.circleimageview.CircleImageView
