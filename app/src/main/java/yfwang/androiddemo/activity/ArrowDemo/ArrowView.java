@@ -61,9 +61,9 @@ public class ArrowView extends View {
         super.onDraw(canvas);
         this.mCanvas = canvas;
         if (direction == LEFT_TO_RIGHT) {
-            drawAL(0, (int) arrowLength, getWidth()-(int) arrowHelfHeight, (int) arrowLength);
+            drawAL(0, getHeight()/2,getWidth()-(int) arrowHelfHeight,getHeight()/2);
         } else if (direction == RIGHT_TO_LEFT) {
-            drawAL(getWidth(), (int) arrowLength,(int) arrowHelfHeight, (int) arrowLength);
+            drawAL(getWidth(), getHeight()/2,(int) arrowHelfHeight, getHeight()/2);
         } else if (direction == LEFT_TO_RIGHT_DOWN) {
             drawAL(0, 0, getWidth() - (int) arrowHelfHeight, getHeight() - (int) arrowHelfHeight);
         } else if (direction == LEFT_TO_RIGHT_UP) {
