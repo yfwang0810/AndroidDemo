@@ -93,6 +93,7 @@
         <activity android:name=".activity.PhotoViewDemo.ListPicActivity" />
         <activity android:name=".activity.ArrowDemo.ArrowActivity"/>
         <activity android:name=".activity.ArrowDemo.TriangleActivity"/>
+        <activity android:name=".activity.FlexboxDemo.FlowLayoutActivity"/>
 
     </application>
 
