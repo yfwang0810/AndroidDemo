@@ -81,6 +81,7 @@
 
         <!-- 高德定位服务 -->
         <service android:name="com.amap.api.location.APSService" />
+        <service android:name=".service.BluetoothBroadcastService" />
 
         <activity android:name=".activity.BezierDemo.ShoppingCartBezierActivity" />
         <activity android:name=".mvp.view.LoginActivity" />
@@ -94,6 +95,8 @@
         <activity android:name=".activity.ArrowDemo.ArrowActivity"/>
         <activity android:name=".activity.ArrowDemo.TriangleActivity"/>
         <activity android:name=".activity.FlexboxDemo.FlowLayoutActivity"/>
+        <activity android:name=".activity.BluetoothPrint.BluetoothPrintActivity" />
+        <activity android:name=".activity.BluetoothPeripheralDemo.BluetoothPeripheralActivity" />
 
     </application>
 

@@ -3,14 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
    >
-     <yfwang.androiddemo.widget.progressbar.CircleProgressbar
-         android:layout_width="@dimen/common_dimen_dp100"
-         android:layout_height="@dimen/common_dimen_dp100"
-         android:progress="60"
-         android:max="100"
-         android:layout_centerVertical="true"
-         android:layout_centerHorizontal="true">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/documents_monitor_bg"
+         >
+          <yfwang.androiddemo.widget.progressbar.CircleProgressbar
+              android:layout_width="148dp"
+              android:layout_height="148dp"
+              android:progress="60"
+              android:max="100"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true">
 
-     </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
+          </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
+
+          <yfwang.androiddemo.widget.progressbar.CircleProgressbar
+              android:layout_width="112dp"
+              android:layout_height="112dp"
+              android:progress="60"
+              android:max="100"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true">
+
+          </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
+     </RelativeLayout>
 </RelativeLayout>

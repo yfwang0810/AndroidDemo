@@ -15,7 +15,7 @@
     <color name="black">#000000</color>
     <color name="black_333333">#333333</color>
 
-    <color name="common_color_c1_0971ce">#0971ce</color>
+    <color name="common_color_c1_0971ce">#0131b3</color>
     <color name="common_color_c2_ffa409">#ffa409</color>
     <color name="common_color_c3_ff910b">#ff910b</color>
     <color name="common_color_c4_ff1f1f">#ff1f1f</color>
@@ -28,6 +28,7 @@
     <color name="common_color_c11_cccccc">#ccc</color>
     <color name="common_color_c12_dcdcdc">#dcdcdc</color>
     <color name="common_color_c13_ececec">#ececec</color>
+    <color name="common_color_30white">#4Dffffff</color>
     <color name="common_color_c14_e5e9ee">#e5e9ee</color>
     <color name="common_color_c1cur_0869c2">#0869c2</color>
     <color name="common_color_c3cur_f0880a">#f0880a</color>

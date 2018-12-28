@@ -15,6 +15,8 @@ import yfwang.androiddemo.activity.ArrowDemo.ArrowActivity;
 import yfwang.androiddemo.activity.ArrowDemo.TriangleActivity;
 import yfwang.androiddemo.activity.BezierDemo.ShoppingCartBezierActivity;
 import yfwang.androiddemo.activity.BlueToothDemo.BluetoothActivity;
+import yfwang.androiddemo.activity.BluetoothPeripheralDemo.BluetoothPeripheralActivity;
+import yfwang.androiddemo.activity.BluetoothPrint.BluetoothPrintActivity;
 import yfwang.androiddemo.activity.Dagger2Demo.Dagger2Activity;
 import yfwang.androiddemo.activity.DraglayoutDemo.DraglayoutActivity;
 import yfwang.androiddemo.activity.FlexboxDemo.FlowLayoutActivity;
@@ -51,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("Arrow Demo", "箭头图", ArrowActivity.class),
             new DemoInfo("Triangle Demo", "三角箭头图", TriangleActivity.class),
             new DemoInfo("FlexboxLayout Demo", "流式布局", FlowLayoutActivity.class),
+            new DemoInfo("Test Demo", "测试demo", BluetoothPrintActivity.class),
+            new DemoInfo("蓝牙广播 Demo", "蓝牙广播demo", BluetoothPeripheralActivity.class),
     };
 
     @Override

@@ -2,6 +2,7 @@ package yfwang.androiddemo.activity.PayKeyboardDemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.InputType;
 import android.view.View;
@@ -57,7 +58,7 @@ public class PayKeyboardActivity extends Activity {
 
     }
 
-    private void hideSystemKeyboard(EditText... mNumber) {
+    private void hideSystemKeyboard(@NonNull EditText... mNumber) {
         for (int i = 0; i < mNumber.length; i++) {
             // 设置不调用系统键盘
             if (android.os.Build.VERSION.SDK_INT <= 10) {

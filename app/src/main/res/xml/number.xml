@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:horizontalGap="1dp"
-    android:keyHeight="8.777%p"
-    android:keyWidth="33.3%p"
-    android:verticalGap="1dp"
+    android:horizontalGap="0dp"
+    android:keyHeight="200dp"
+    android:keyWidth="25%p"
+    android:verticalGap="0dp"
   >
     <Row>
         <Key
@@ -17,6 +17,11 @@
             android:codes="51"
             android:keyLabel="3" />
 
+        <Key android:codes="-5"
+            android:keyHeight="100dip"
+            android:keyEdgeFlags="right"
+            android:isRepeatable="true"
+            android:keyLabel="删除" />
 
     </Row>
     <Row>
@@ -43,6 +48,10 @@
         <Key
             android:codes="57"
             android:keyLabel="9" />
+
+        <Key android:codes="-3" android:keyHeight="100dip"
+            android:keyEdgeFlags="right" android:isRepeatable="true"
+            android:keyLabel="完成" />
 
     </Row>
     <Row>

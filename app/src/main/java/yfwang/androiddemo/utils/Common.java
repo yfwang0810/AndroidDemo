@@ -2,7 +2,6 @@ package yfwang.androiddemo.utils;
 
 public class Common {
 
-    public static boolean offOnState = false; //wifi链接true wifi断开false
 
     private static Common instance;
 

@@ -3,12 +3,15 @@ package yfwang.androiddemo.global;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import yfwang.androiddemo.utils.SharedpreferencesUtil;
 
@@ -127,6 +130,37 @@ public class MobileApplication extends Application {
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext()).
                 defaultDisplayImageOptions(displayimageOptions).build();
         ImageLoader.getInstance().init(config);
+    }
+
+
+    // 获取版本名
+    public String getVersionName() {
+        PackageManager packageManager = getPackageManager();
+        PackageInfo packageInfo;
+        String versionName = "";
+        try {
+            packageInfo = packageManager.getPackageInfo(getPackageName(), 0);
+            versionName = packageInfo.versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        versionName = versionName.replace("v", "").replace("V", "");
+
+        try {
+            if (versionName.contains("_")) {
+                versionName = versionName.split("_")[0];
+            }
+        } catch (Exception e) {
+
+        }
+
+        return versionName;
+    }
+
+    public String getCurrLanguageEnv() {
+        Locale locale = getResources().getConfiguration().locale;
+        String language = locale.getLanguage();
+        return language;
     }
 
 }

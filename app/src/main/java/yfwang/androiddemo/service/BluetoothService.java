@@ -481,7 +481,7 @@ public class BluetoothService extends Service {
                     }
                 }
             }
-            if (userID.equals(sb.toString()) || (result.getDevice().getName() != null && result.getDevice().getName().startsWith("BARCODE") && Math.abs(result.getRssi()) > 50)) {
+            if (userID.equals(sb.toString()) ) {
                 // 当成功定义广播包后,提醒用户
                 // 如果当前搜索到的设备广播包中带有界面上的二维码信息
                 scanDevice(false);
