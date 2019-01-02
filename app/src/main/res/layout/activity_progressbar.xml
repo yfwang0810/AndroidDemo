@@ -15,19 +15,25 @@
               android:layout_height="148dp"
               android:progress="60"
               android:max="100"
+              app:isClick="true"
+              app:strokeWidth="18"
               android:layout_centerVertical="true"
               android:layout_centerHorizontal="true">
 
           </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
 
-          <!--<yfwang.androiddemo.widget.progressbar.CircleProgressbar-->
-              <!--android:layout_width="112dp"-->
-              <!--android:layout_height="112dp"-->
-              <!--android:progress="60"-->
-              <!--android:max="100"-->
-              <!--android:layout_centerVertical="true"-->
-              <!--android:layout_centerHorizontal="true">-->
+          <yfwang.androiddemo.widget.progressbar.CircleProgressbar
+              android:layout_width="105dp"
+              android:layout_height="105dp"
+              android:progress="60"
+              android:max="100"
+              app:progressbarBackgroundColor="#0131b3"
+              app:progressbarColor="#0131b3"
+              app:isClick="true"
+              app:strokeWidth="10"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true">
 
-          <!--</yfwang.androiddemo.widget.progressbar.CircleProgressbar>-->
+          </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
      </RelativeLayout>
 </RelativeLayout>
