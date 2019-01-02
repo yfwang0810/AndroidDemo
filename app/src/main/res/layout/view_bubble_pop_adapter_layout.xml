@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_pop_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp44"
+        android:layout_marginLeft="@dimen/common_dimen_dp5"
+        android:layout_marginRight="@dimen/common_dimen_dp5">
+
+        <TextView
+            android:id="@+id/tv_content_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_choice"
+            android:layout_marginRight="@dimen/common_dimen_dp5"
+            android:singleLine="true"
+            android:textColor="@color/common_color_c3_ffffff"
+            android:textSize="@dimen/common_dimen_s7_dp14" />
+
+        <ImageView
+            android:id="@+id/iv_choice"
+            android:layout_width="@dimen/common_dimen_s7_dp14"
+            android:layout_height="@dimen/common_dimen_s7_dp14"
+            android:layout_marginRight="@dimen/common_dimen_dp5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sorting_choice"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp_half"
+        android:background="#20ffffff" />
+
+</LinearLayout>

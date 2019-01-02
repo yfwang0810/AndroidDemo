@@ -62,6 +62,7 @@
     <dimen name="common_dimen_dp125">125dp</dimen>
     <dimen name="common_dimen_dp130">130dp</dimen>
     <dimen name="common_dimen_dp158">158dp</dimen>
+    <dimen name="common_dimen_dp180">180dp</dimen>
     <dimen name="common_dimen_dp190">190dp</dimen>
     <dimen name="common_dimen_dp210">210dp</dimen>
     <dimen name="common_dimen_dp225">225dp</dimen>

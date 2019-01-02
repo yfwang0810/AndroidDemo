@@ -24,5 +24,31 @@
         <item name="android:windowExitAnimation">@anim/menu_bottom_bar_out</item>
     </style>
 
+    <style name="anim_pop_up_down">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_up_down_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_up_down_out</item>
+    </style>
+
+    <style name="anim_pop_up_function_unit">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_up_function_unit_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_up_function_unit_out</item>
+    </style>
+
+    <!--popupWindow底部菜单动画-->
+    <style name="anim_menu_top_bar">
+        <item name="android:windowEnterAnimation">@anim/menu_top_bar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_top_bar_out</item>
+    </style>
+
+    <style name="popwin_anim_by_businessunit">
+        <item name="android:windowEnterAnimation">@anim/businessunit_popwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/businessunit_popwindow_out</item>
+    </style>
+
+    <style name="popwin_anim_resource_unit">
+        <item name="android:windowEnterAnimation">@anim/businessunit_popwindow_in_resource_unit</item>
+        <item name="android:windowExitAnimation">@anim/businessunit_popwindow_out_resource_unit</item>
+    </style>
+
 
 </resources>

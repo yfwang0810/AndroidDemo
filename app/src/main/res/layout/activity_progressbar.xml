@@ -20,14 +20,14 @@
 
           </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
 
-          <yfwang.androiddemo.widget.progressbar.CircleProgressbar
-              android:layout_width="112dp"
-              android:layout_height="112dp"
-              android:progress="60"
-              android:max="100"
-              android:layout_centerVertical="true"
-              android:layout_centerHorizontal="true">
+          <!--<yfwang.androiddemo.widget.progressbar.CircleProgressbar-->
+              <!--android:layout_width="112dp"-->
+              <!--android:layout_height="112dp"-->
+              <!--android:progress="60"-->
+              <!--android:max="100"-->
+              <!--android:layout_centerVertical="true"-->
+              <!--android:layout_centerHorizontal="true">-->
 
-          </yfwang.androiddemo.widget.progressbar.CircleProgressbar>
+          <!--</yfwang.androiddemo.widget.progressbar.CircleProgressbar>-->
      </RelativeLayout>
 </RelativeLayout>

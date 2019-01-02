@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/common_dimen_dp180"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble_pop_top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_choice1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dimen_dp44"
+            android:layout_marginLeft="@dimen/common_dimen_dp5"
+            android:layout_marginRight="@dimen/common_dimen_dp5">
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/choice1"
+                android:layout_marginRight="@dimen/common_dimen_dp5"
+                android:singleLine="true"
+                android:text="@string/sort_by_task_emergency"
+                android:textColor="@color/common_color_c3_ffffff"
+                android:textSize="@dimen/common_dimen_s7_dp14" />
+
+            <ImageView
+                android:id="@+id/choice1"
+                android:layout_width="@dimen/common_dimen_s7_dp14"
+                android:layout_height="@dimen/common_dimen_s7_dp14"
+                android:layout_marginRight="@dimen/common_dimen_dp5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sorting_choice"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dimen_dp_half"
+            android:background="#20ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/ll_choice2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dimen_dp44"
+            android:layout_marginLeft="@dimen/common_dimen_dp5"
+            android:layout_marginRight="@dimen/common_dimen_dp5">
+
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/choice2"
+                android:layout_marginRight="@dimen/common_dimen_dp5"
+                android:singleLine="true"
+                android:text="@string/sort_by_from_near_to_far"
+                android:textColor="@color/common_color_c3_ffffff"
+                android:textSize="@dimen/common_dimen_s7_dp14" />
+
+            <ImageView
+                android:id="@+id/choice2"
+                android:layout_width="@dimen/common_dimen_s7_dp14"
+                android:layout_height="@dimen/common_dimen_s7_dp14"
+                android:layout_marginRight="@dimen/common_dimen_dp5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sorting_choice"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dimen_dp_half"
+            android:background="#20ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/ll_choice3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dimen_dp44"
+            android:layout_marginLeft="@dimen/common_dimen_dp5"
+            android:layout_marginRight="@dimen/common_dimen_dp5">
+
+            <TextView
+                android:id="@+id/tv_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/choice3"
+                android:layout_marginRight="@dimen/common_dimen_dp5"
+                android:singleLine="true"
+                android:text="@string/sort_by_from_far_to_near"
+                android:textColor="@color/common_color_c3_ffffff"
+                android:textSize="@dimen/common_dimen_s7_dp14" />
+
+            <ImageView
+                android:id="@+id/choice3"
+                android:layout_width="@dimen/common_dimen_s7_dp14"
+                android:layout_height="@dimen/common_dimen_s7_dp14"
+                android:layout_marginRight="@dimen/common_dimen_dp5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sorting_choice"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
