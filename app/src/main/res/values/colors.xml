@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSecondary">#316671</color>
+    <color name="white50">#b3ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_E5E9ED">#E5E9ED</color>
+    <color name="transparent">#00000000</color>
+    <color name="red500">#db4437</color>
+    <color name="textlight">#546e7a</color>
+    <color name="textlight30">#4d6b8d9c</color>
+    <color name="border">#e7e7e7</color>
+    <color name="black">#000000</color>
+    <color name="black_333333">#333333</color>
+
+    <color name="common_color_c3_ffffff">#ffffff</color>
+    <color name="common_color_c1_0971ce">#0131b3</color>
+    <color name="common_color_c2_ffa409">#ffa409</color>
+    <color name="common_color_c3_ff910b">#ff910b</color>
+    <color name="common_color_c4_ff1f1f">#ff1f1f</color>
+    <color name="common_color_c5_ffffff">#fff</color>
+    <color name="common_color_c6_000000">#000</color>
+    <color name="common_color_c7_333333">#333</color>
+    <color name="common_color_c8_666666">#666</color>
+    <color name="common_color_c9_999999">#999</color>
+    <color name="common_color_c10_b8b8b8">#b8b8b8</color>
+    <color name="common_color_c11_cccccc">#ccc</color>
+    <color name="common_color_c12_dcdcdc">#dcdcdc</color>
+    <color name="common_color_c13_ececec">#ececec</color>
+    <color name="common_color_30white">#4Dffffff</color>
+    <color name="common_color_c14_e5e9ee">#e5e9ee</color>
+    <color name="common_color_c1cur_0869c2">#0869c2</color>
+    <color name="common_color_c3cur_f0880a">#f0880a</color>
+
+    <!--按键不可点击状态颜色-->
+    <color name="common_color_5_55ffffff">#55FFFFFF</color>
+
+</resources>

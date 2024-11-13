@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_dimen_dp70"
+    android:id="@+id/rel_item"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimen_dp_half"
+        android:background="@color/common_color_c13_ececec"
+        android:layout_alignParentBottom="true"
+        />
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/common_dimen_dp12"
+        android:layout_height="@dimen/common_dimen_dp18"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_dimen_dp15"
+        android:background="@drawable/map_list_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_dimen_dp12"
+        android:layout_marginRight="@dimen/common_dimen_dp15"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_dimen_dp17"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/map_list_text_address_selector"
+            android:textSize="@dimen/common_dimen_s6_dp16"
+            android:text="新加坡科技园"
+            />
+
+        <TextView
+            android:id="@+id/tv_addrdss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_dimen_dp7"
+            android:maxLines="1"
+            android:textColor="@color/map_list_text_selector"
+            android:textSize="@dimen/common_dimen_s7_dp14"
+            android:text="6号大街19号新加坡科技园3号楼"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_choise"
+        android:layout_width="@dimen/common_dimen_dp19"
+        android:layout_height="@dimen/common_dimen_dp19"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_dimen_dp15"
+        android:src="@drawable/choice_icon"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_bg"
+    android:layout_width="70dp"
+    android:layout_height="75dp"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/color_blue_or_gray"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:layout_below="@+id/tv_numbers"
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="#36393a"
+            />
+</RelativeLayout>

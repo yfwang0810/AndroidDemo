@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble_pop_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/common_dimen_dp5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="获取权限时间由远到近"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_dimen_s7_dp14" />
+
+            <ImageView
+                android:id="@+id/choice2"
+                android:layout_width="@dimen/common_dimen_s7_dp14"
+                android:layout_height="@dimen/common_dimen_s7_dp14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_dimen_dp15"
+                android:layout_marginRight="@dimen/common_dimen_dp15"
+                android:src="@drawable/sorting_choice"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dimen_dp_half"
+            android:background="#20ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/common_dimen_dp5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="获取权限时间由近到远"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_dimen_s7_dp14" />
+
+            <ImageView
+                android:id="@+id/choice3"
+                android:layout_width="@dimen/common_dimen_s7_dp14"
+                android:layout_height="@dimen/common_dimen_s7_dp14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_dimen_dp15"
+                android:layout_marginRight="@dimen/common_dimen_dp15"
+                android:src="@drawable/sorting_choice"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

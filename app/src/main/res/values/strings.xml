@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndroidDemo</string>
+    <string name="action_settings">setting</string>
+    <!--蓝牙-->
+    <string name="lianjieshebei">连接设备</string>
+    <string name="qiehuanlianjieshebei">切换连接设备</string>
+    <string name="confirm">确定</string>
+
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <string name="sort_by_task_emergency">任务紧急程度</string>
+    <string name="sort_by_from_near_to_far">时间近→远</string>
+    <string name="sort_by_from_far_to_near">时间远→近</string>
+</resources>

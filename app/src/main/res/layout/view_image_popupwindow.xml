@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+      <Button
+          android:id="@+id/btn_delete_photo"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="@android:color/white"
+          android:textColor="@color/common_color_c4_ff1f1f"
+          android:text="删除"
+          android:textSize="@dimen/common_dimen_s5_dp18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc"/>
+
+        <Button
+            android:id="@+id/btn_save_photo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            android:textColor="@color/common_color_c1_0971ce"
+            android:text="保存到相册"
+            android:textSize="@dimen/common_dimen_s5_dp18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dcdcdc"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:textColor="@color/common_color_c7_333333"
+            android:text="取消"
+            android:textSize="@dimen/common_dimen_s6_dp16"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
